@@ -1,5 +1,5 @@
 DROP DATABASE IF EXISTS mealPlanner_db;
-CREATE DATABASE mealplanner_db;
+CREATE DATABASE mealPlanner_db;
 
 USE mealPlanner_db;
 
