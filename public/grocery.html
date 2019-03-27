@@ -82,18 +82,6 @@
                 <div class="col-12">
                     <div class="logo_area text-center">
                         <a href="/" class="yummy-logo">Yummy Box</a>
-                        <!-- Logo Area Slideshow -->
-                        <div id="slideshow">
-                            <div>
-                                <p>Search for recipes</p>
-                            </div>
-                            <div>
-                                <p>Generate required ingredients list</p>
-                            </div>
-                            <div>
-                                <p>Save your favorite recipes</p>
-                            </div>
-                        </div>
                     </div>
                 </div>
             </div>
@@ -135,14 +123,6 @@
                 <div class="col-12">
                     <div class="bradcumb-title text-center">
                         <h2>Grocery</h2>
-                        <form class="form-inline align-items-center" id="main-search" enctype="multipart/form-data"
-                            method="" action="" role="form">
-                            <label class="sr-only" for="inlineFormInput">Search for ingredients</label>
-                            <input type="text" class="form-control xs-4 mr-sm-4" id="recipes"
-                                placeholder="Search for recipes">
-                            <button type="submit" class="btn btn-primary" id="submit"><i class="fa fa-search"></i>
-                                Search</button>
-                        </form>
                     </div>
                 </div>
             </div>
@@ -173,17 +153,11 @@
                     <div class="row no-gutters">
                         <!-- Single Post -->
                         <div class="single-post">
-                            <!-- Post Thumb -->
-                            <div class="post-thumb">
-                                <img src="img/blog-img/10.jpg" alt="">
-                            </div>
                             <!-- Post Content -->
                             <div class="post-content">
-                                <a href="#">
-                                    <h2 class="post-headline">Boil The Kettle And Make A Cup Of Tea Folks, This Is
-                                        Going To Be A Big One!</h2>
-                                </a>
-                                <h4>Here is the list of ingredients you're going to need:</h4>
+
+                                <h4>Here is the list of ingredients</h4>
+                                <h4>you're going to need:</h4>
                                 <br>
                                 <ul class="mb-30">
                                     <li>1/3 cup Lonsectetur adipisici</li>
@@ -200,7 +174,7 @@
                 </div>
 
                 <!-- ****** Blog Sidebar ****** -->
-                <div class="col-12 col-sm-8 col-md-6 col-lg-4">
+                <div class="col-12 col-md-8 col-lg-4">
                     <div class="blog-sidebar mt-5 mt-lg-0">
 
                         <!-- Single Widget Area -->
@@ -208,55 +182,8 @@
                             <div class="widget-title text-center">
                                 <h6>Populer Post</h6>
                             </div>
-                            <!-- Single Popular Post -->
-                            <div class="single-populer-post d-flex">
-                                <img src="img/sidebar-img/1.jpg" alt="">
-                                <div class="post-content">
-                                    <a href="#">
-                                        <h6>Top Wineries To Visit In England</h6>
-                                    </a>
-                                    <p>Tuesday, October 3, 2017</p>
-                                </div>
-                            </div>
-                            <!-- Single Popular Post -->
-                            <div class="single-populer-post d-flex">
-                                <img src="img/sidebar-img/2.jpg" alt="">
-                                <div class="post-content">
-                                    <a href="#">
-                                        <h6>The 8 Best Gastro Pubs In Bath</h6>
-                                    </a>
-                                    <p>Tuesday, October 3, 2017</p>
-                                </div>
-                            </div>
-                            <!-- Single Popular Post -->
-                            <div class="single-populer-post d-flex">
-                                <img src="img/sidebar-img/3.jpg" alt="">
-                                <div class="post-content">
-                                    <a href="#">
-                                        <h6>Zermatt Unplugged the best festival</h6>
-                                    </a>
-                                    <p>Tuesday, October 3, 2017</p>
-                                </div>
-                            </div>
-                            <!-- Single Popular Post -->
-                            <div class="single-populer-post d-flex">
-                                <img src="img/sidebar-img/4.jpg" alt="">
-                                <div class="post-content">
-                                    <a href="#">
-                                        <h6>Harrogate's Top 10 Independent Eats</h6>
-                                    </a>
-                                    <p>Tuesday, October 3, 2017</p>
-                                </div>
-                            </div>
-                            <!-- Single Popular Post -->
-                            <div class="single-populer-post d-flex">
-                                <img src="img/sidebar-img/5.jpg" alt="">
-                                <div class="post-content">
-                                    <a href="#">
-                                        <h6>Eating Out On A Budget In Oxford</h6>
-                                    </a>
-                                    <p>Tuesday, October 3, 2017</p>
-                                </div>
+                            <!-- Post generated from API call-->
+                            <div id="news">
                             </div>
                         </div>
 
@@ -265,7 +192,7 @@
                             <div class="widget-title text-center">
                                 <h6>Newsletter</h6>
                             </div>
-                            <p>Subscribe our newsletter gor get notification about new updates, information discount,
+                            <p>Subscribe to our newsletter to get notification about new updates, information discount,
                                 etc.</p>
                             <div class="newsletter-form">
                                 <form action="#" method="post">
