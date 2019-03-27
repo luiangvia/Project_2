@@ -923,23 +923,13 @@ li {
 }
 
 /* --------------------
-:: 9.0 Goole Map Area CSS
--------------------- */
-
-#googleMap {
-    height: 620px;
-    width: 100%;
-}
-
-
-/* --------------------
 :: 10.0 Sidebar Area CSS
 -------------------- */
 
 /* About me */
 
 .single-widget-area {
-    margin-bottom: 50px;
+    margin-bottom: 40px;
 }
 
 .widget-title > h6 {
@@ -999,7 +989,7 @@ li {
 }
 
 .popular-post-widget .single-populer-post img {
-    width: calc(50% - 10px);
+    width: 50%;
 }
 
 .popular-post-widget .single-populer-post img,
@@ -1017,6 +1007,24 @@ li {
     color: #b5aec4;
     font-weight: 400;
     margin-bottom: 0;
+}
+
+.single-populer-post .read-more:hover {
+    color: #000;
+    border: 1px solid #000;
+}
+
+.single-populer-post .read-more {
+    font-size: 12px;
+    color: #b5aeba;
+    display: inline-block;
+    border: 1px solid #ebebeb;
+    border-radius: 10px;
+    height: 22px;
+    min-width: 140px;
+    line-height: 22px;
+    text-align: center;
+    margin-bottom: 8px;
 }
 
 /* Add Widget */
@@ -1082,6 +1090,7 @@ li {
 
 .newsletter-widget p {
     font-size: 14px;
+    text-align: center;
 }
 
 .newsletter-form {
