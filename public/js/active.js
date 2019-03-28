@@ -131,8 +131,8 @@
             $(this).remove();
         });
     });
-
-    // Title slideshow on home page
+ 
+    
     $("#slideshow > div:gt(0)").hide();
     setInterval(function () {
         $('#slideshow > div:first')
@@ -141,35 +141,6 @@
             .fadeIn(1000)
             .end()
             .appendTo('#slideshow');
-    }, 3000);
-
-    // Food news API call displayed in sidebar.
-    $(document).ready(function()  {
-        var newsapi = '7fabcb6f2bdc479e826d08269c5e8647';
-        var news_resource_url = 'https://newsapi.org/v2/everything?q=food&apiKey=' + newsapi;
-        $.ajax({
-            url: news_resource_url,
-            method: "GET"
-        }).then(function (response) {
-            console.log(response)
-
-            for (var i = 0; i < 5; i++) {
-                var newCard = $("<div>").attr("class", "single-populer-post d-flex");
-                var newCardImg = $("<img>").attr("src", response.articles[i].urlToImage);
-                var newCardContent = $("<div>").attr("class", "post-content");
-                var newCardTitle = $("<h6>");
-                var newCardBtn = $("<a>").attr("class", "read-more");
-
-                newCardTitle.text(response.articles[i].title);
-                newCardBtn.text("Read more...");
-                newCardBtn.attr("href", response.articles[i].url);
-                newCardContent.append(newCardTitle, newCardBtn)
-                newCard.append(newCardImg, newCardContent);
-                var card = $("#news");
-                //append my new row to the table body
-                card.append(newCard);
-            }
-        })
-    });
+    },3000); 
 
 })(jQuery);
