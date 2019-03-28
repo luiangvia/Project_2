@@ -143,7 +143,7 @@
             .appendTo('#slideshow');
     }, 3000);
 
-    // Food news API call
+    // Food news API call displayed in sidebar.
     $(document).ready(function()  {
         var newsapi = '7fabcb6f2bdc479e826d08269c5e8647';
         var news_resource_url = 'https://newsapi.org/v2/everything?q=food&apiKey=' + newsapi;
