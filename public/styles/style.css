@@ -8,7 +8,7 @@
 :: 6.0 Blog Area CSS 
 :: 7.0 Instagram Area CSS 
 :: 8.0 Footer Social Area CSS 
-:: 9.0 Goole Map Area CSS
+:: 9.0 Recipe Area CSS
 :: 10.0 Sidebar Area CSS
 :: 11.0 Breadcumb Area CSS
 :: 12.0 Paginatio Area CSS
@@ -93,8 +93,8 @@ p {
 }
 
 .section_padding_80 {
-    margin-top: 80px;
-    margin-bottom: 80px;
+    margin-top: 40px;
+    margin-bottom: 60px;
 }
 
 .section_padding_80_50 {
@@ -920,6 +920,64 @@ li {
 
 .footer_area .navbar.navbar-expand-lg .navbar-nav .nav-link {
     padding-bottom: 0;
+}
+/* --------------------
+:: 9.0 Recipe Area CSS
+-------------------- */
+
+.recipe {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.recipe h2,
+.recipe h4 {
+    margin: 10px 0;
+    color: #232d37;
+    -webkit-transition-duration: 500ms;
+    transition-duration: 500ms;
+    text-transform: capitalize;
+    padding-left: 10px;
+}
+
+.recipe h2:hover,
+.recipe h4:hover {
+    color: #fc6c3f;
+}
+
+.recipe p {
+    color: #51545f;
+    padding-left: 10px;
+}
+
+.recipe .read-more {
+    font-size: 12px;
+    color: #b5aeba;
+    display: inline-block;
+    border: 1px solid #ebebeb;
+    border-radius: 20px;
+    height: 30px;
+    min-width: 150px;
+    line-height: 30px;
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.recipe .read-more:hover {
+    color: #000;
+    border: 1px solid #000;
+}
+
+.recipe img {
+    margin-bottom: 16px !important;
+    margin-top: 10px;
+    border: 1px solid #ebebeb;
+    border-radius: 20px;
+}
+
+#recipes-title h2 {
+    font-size: 40px;
+    margin-bottom: 2rem;
 }
 
 /* --------------------
