@@ -23,6 +23,11 @@ function displayRecipeInfo() {
             var calories = response.hits[i].recipe.calories;
             var pTwo = $("<p>").text("Calories: " + calories);
             recipeDiv.append(pTwo);
+            
+            var servings = response.hits[i].recipe.yield;
+            var pFive = $("<p>").text("Servings: " + servings);
+            recipeDiv.append(pFive);
+
             var ingredients = response.hits[i].recipe.ingredientLines;
             var pThree = $("<p>").text("Ingredients: " + ingredients);
             recipeDiv.append(pThree);
@@ -30,8 +35,8 @@ function displayRecipeInfo() {
             var image = $("<img>").attr("src", imgURL);
             recipeDiv.append(image);
             var ingredients = response.hits[i].recipe.ingredientLines;
-            var pThree = $("<p>").text("Ingredients: " + ingredients);
-            recipeDiv.append(pThree);
+            var pFour = $("<p>").text("Ingredients: " + ingredients);
+            recipeDiv.append(pFour);
             var link = $("<a>");
             link.text("More info");
             sourceLink = response.hits[i].recipe.url;
