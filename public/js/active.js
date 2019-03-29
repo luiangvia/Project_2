@@ -176,19 +176,15 @@
 
 //============================ Search Button Api Results==================================================================//
 
-// Initial array of recipes
-//var recipes[];
-
 var id = "cb29f88c";
 var key = "d602f1e3d5650efe09b61a38753a9132";
 
 $("#submit").on("click", function (event) {
     event.preventDefault();
 
-    $("recipes-view").empty();
+    $("#favorite-recipes-view").empty();
    
     var recipe = $("#recipes").val().trim();
-    //var recipe = $(this).attr("data-name");
     console.log(recipe);
     var queryURL = "https://api.edamam.com/search?q=" + recipe + "&app_id=" + id + "&app_key=" + key ;
   
@@ -196,25 +192,26 @@ $("#submit").on("click", function (event) {
         url: queryURL,
         method: "GET"
     }).then(function (response) {
-        for (var i = 0; i < 1; i++) {
-            var recipeDiv = $("<div class='recipe'>");
+        for (var i = 0; i < 3; i++) {
+            var recipeDiv = $("<div class='recipe col-12 col-lg-4'>");
             var recipeName = response.hits[i].recipe.label;
-            var pOne = $("<p>").text("Name: " + recipeName);
+            var pOne = $("<h4>").text(recipeName);
             recipeDiv.append(pOne);
-            var calories = response.hits[i].recipe.calories;
-            var pTwo = $("<p>").text("Calories: " + calories);
-            recipeDiv.append(pTwo);
-            var ingredients = response.hits[i].recipe.ingredientLines;
-            var pThree = $("<p>").text("Ingredients: " + ingredients);
-            recipeDiv.append(pThree);
             var imgURL = response.hits[i].recipe.image;
             var image = $("<img>").attr("src", imgURL);
             recipeDiv.append(image);
-            var ingredients = response.hits[i].recipe.ingredientLines;
-            var pThree = $("<p>").text("Ingredients: " + ingredients);
+            var calories = response.hits[i].recipe.calories;
+            calories = calories.toFixed();
+            var pTwo = $("<p>").text("Calories: " + calories);
+            recipeDiv.append(pTwo);
+            var servings = response.hits[i].recipe.yield;
+            var pThree = $("<p>").text("Servings: " + servings);
             recipeDiv.append(pThree);
-            var link = $("<a>");
-            link.text("More info");
+            var ingredients = response.hits[i].recipe.ingredientLines;
+            var pFour = $("<p>").text("Ingredients: " + ingredients);
+            recipeDiv.append(pFour);
+            var link = $("<a class='read-more'>");
+            link.text("Continue reading...");
             sourceLink = response.hits[i].recipe.url;
             link.attr("href", sourceLink);
             link.attr("target", "_blank");
@@ -223,32 +220,4 @@ $("#submit").on("click", function (event) {
             $("#recipes-view").prepend(recipeDiv);
         };
     });
-}
-
-
-
-/*
-function renderButtons() {
-
-    $("#buttons-view").empty();
-
-    for (var i = 0; i < recipes.length; i++) {
-
-        var a = $("<button>");
-        a.addClass("recipe-btn");
-        a.attr("data-name", recipes[i]);
-        a.text(recipes[i]);
-        $("#buttons-view").append(a);
-    }
-}
-
-$("#submit").on("click", function (event) {
-    event.preventDefault();
-    var recipe = $("#recipe-input").val().trim();
-    recipes.push(recipe);
-    renderButtons();
-});
-$(document).on("click", ".recipe-btn", displayRecipeInfo);
-renderButtons();
-*/
-)
+})
