@@ -151,7 +151,6 @@
             url: news_resource_url,
             method: "GET"
         }).then(function (response) {
-            console.log(response)
 
             for (var i = 0; i < 5; i++) {
                 var newCard = $("<div>").attr("class", "single-populer-post d-flex");
