@@ -117,35 +117,6 @@
     </header>
     <!-- ****** Header Area End ****** -->
 
-<!-- =========================================== BEGIN  Recipe List / Submit Area ======================================= -->
-    <div class="container">
-            <div id="recipes-view"></div>
-        <div class="row">
-          <div class="col-md-6 offset-md-3">
-            <ul class="list-group todo-list">
-              <li class="list-group-item new-item">
-                <form id="todo-form">
-                  <div class="container">
-                    <div class="row">
-                      <div class="col-10">
-                        <input class="new-item form-control" placeholder="Add a todo" type="text" />
-                      </div>
-                      <div class="col-2">
-                        <button type="submit" class="btn btn-success">Add Recipe</button>
-                      </div>
-                    </div>
-                  </div>
-                </form>
-              </li>
-              <span class="todo-container">
-              </span>
-            </ul>
-          </div>
-        </div>
-    </div>
-    
-      <!-- =========================================== END  Recipe List / Submit Area ======================================= -->
-
     <!-- ****** Breadcumb Area Start ****** -->
     <div class="breadcumb-area" style="background-image: url(img/bg-img/breadcumb.jpg);">
         <div class="container h-100">
@@ -169,7 +140,7 @@
     <div class="breadcumb-nav">
         <div class="container">
             <div class="row">
-                <div class="col-12">
+                <div class="col-lg-6">
                     <nav aria-label="breadcrumb">
                         <ol class="breadcrumb">
                             <li class="breadcrumb-item"><a href="/"><i class="fa fa-home" aria-hidden="true"></i>
@@ -178,6 +149,28 @@
                         </ol>
                     </nav>
                 </div>
+                <!-- ==================== BEGIN  Recipe List / Submit Area ===================== -->
+                <div class="col-lg-6">
+                    <ul class="list-group todo-list">
+                        <li class="list-group-item new-item">
+                            <form id="todo-form">
+                                <div class="container">
+                                    <div class="row">
+                                        <div class="col-10">
+                                            <input class="new-item form-control" placeholder="Add a todo" type="text" />
+                                        </div>
+                                        <div class="col-2">
+                                            <button type="submit" class="btn btn-success">Add Recipe</button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </form>
+                        </li>
+                        <span class="todo-container">
+                        </span>
+                    </ul>
+                </div>
+                <!-- ==================== END  Recipe List / Submit Area ========================= -->
             </div>
         </div>
     </div>
@@ -187,6 +180,9 @@
     <section class="archive-area section_padding_80">
         <div class="container">
             <div class="row">
+
+                <!-- Single recipe from api call -->
+                <div class="col-12" id="recipes-view"></div>
 
                 <!-- Single Post -->
                 <div class="col-12 col-md-6 col-lg-4">
@@ -201,14 +197,14 @@
                                 <div class="post-author-date-area d-flex">
                                     <!-- Post Cooktime -->
                                     <div class="post-author">
-                                        <a href="#">Cooktime:  30 min  </a>
+                                        <a href="#">Cooktime: 30 min </a>
                                     </div>
                                 </div>
                                 <!-- Post Calories Area -->
                                 <div class="post-comment-share-area d-flex">
                                     <!-- Post Comments -->
                                     <div class="post-comments">
-                                        <a href="#">Calories per serving:  750</a>
+                                        <a href="#">Calories per serving: 750</a>
                                     </div>
                                 </div>
                             </div>
@@ -232,14 +228,14 @@
                                 <div class="post-author-date-area d-flex">
                                     <!-- Post Cooktime -->
                                     <div class="post-author">
-                                        <a href="#">Cooktime:  40 min</a>
+                                        <a href="#">Cooktime: 40 min</a>
                                     </div>
                                 </div>
                                 <!-- Post Calories Area -->
                                 <div class="post-comment-share-area d-flex">
                                     <!-- Post Comments -->
                                     <div class="post-comments">
-                                        <a href="#">Calories per serving:  25</a>
+                                        <a href="#">Calories per serving: 25</a>
                                     </div>
                                 </div>
                             </div>
