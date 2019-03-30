@@ -183,6 +183,8 @@ $("#submit").on("click", function (event) {
     event.preventDefault();
 
     $("#favorite-recipes-view").empty();
+    $("#recipes-view").empty();
+
    
     var recipe = $("#recipes").val().trim();
     console.log(recipe);
@@ -216,6 +218,9 @@ $("#submit").on("click", function (event) {
             link.attr("href", sourceLink);
             link.attr("target", "_blank");
             recipeDiv.append(link);
+
+            var addRecipe = $("<button type='addRecipe' class='btn btn-primary'>Add Recipe</button>");
+            recipeDiv.append(addRecipe);
 
             $("#recipes-view").prepend(recipeDiv);
         };
