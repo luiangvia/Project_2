@@ -169,6 +169,10 @@ img {
     margin-bottom: 30px;
 }
 
+.mb-30 label {
+    margin-left: 20px;
+}
+
 .mb-50 {
     margin-bottom: 50px;
 }
@@ -726,7 +730,6 @@ li {
 
 .single-post h2,
 .single-post h4 {
-    margin: 10px 0;
     color: #232d37;
     -webkit-transition-duration: 500ms;
     transition-duration: 500ms;
@@ -938,6 +941,7 @@ li {
     transition-duration: 500ms;
     text-transform: capitalize;
     padding-left: 10px;
+    padding-right: 20px;
 }
 
 .recipe h2:hover,
@@ -948,6 +952,7 @@ li {
 .recipe p {
     color: #51545f;
     padding-left: 10px;
+    padding-right: 20px;
 }
 
 .recipe .read-more {
@@ -973,11 +978,21 @@ li {
     margin-top: 10px;
     border: 1px solid #ebebeb;
     border-radius: 20px;
+    width: 100%;
 }
 
 #recipes-title h2 {
     font-size: 40px;
     margin-bottom: 2rem;
+}
+
+.todo-item .btn, 
+.todo-item span {
+    margin-left: 20px;
+}
+
+#add-recipe-div {
+    margin-top: 10px;
 }
 
 /* --------------------
@@ -1212,7 +1227,7 @@ li {
 
 .breadcumb-nav .breadcrumb {
     padding: 0;
-    margin-bottom: 0;
+    margin-bottom: 20px;
     list-style: none;
     background-color: transparent;
     border-radius: .25rem;
@@ -1600,3 +1615,4 @@ li {
 	color: #fff;
 	cursor: pointer;
 }
+
