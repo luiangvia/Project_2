@@ -1,7 +1,5 @@
 require("dotenv").config();
 var express = require("express");
-var orm = require("./config/orm.js");
-
 
 var db = require("./models");
 
