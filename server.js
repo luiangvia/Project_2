@@ -19,9 +19,6 @@ require("./routes/htmlRoutes")(app);
 
 var syncOptions = { force: false };
 
-// Find all the recipes and display in console to test orm
-orm.selectAll("todos");
-
 // If running a test, set syncOptions.force to true
 // clearing the `testdb`
 if (process.env.NODE_ENV === "test") {
