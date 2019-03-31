@@ -219,7 +219,8 @@ $("#submit").on("click", function (event) {
             link.attr("target", "_blank");
             recipeDiv.append(link);
 
-            var addRecipe = $("<button type='addRecipe' class='btn btn-primary'>Add Recipe</button>");
+            var addRecipe = $("<button type='addRecipe' class='btn btn-primary addRecipe'>Add Recipe</button>");
+            addRecipe.attr("value", response.hits[i].recipe.label);
             recipeDiv.append(addRecipe);
 
             $("#recipes-view").prepend(recipeDiv);
