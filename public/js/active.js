@@ -1,3 +1,7 @@
+//API Keys connection
+require("dotenv").config({ path: "../../.env" });
+var key = require("../../keys.js");
+
 (function ($) {
     'use strict';
 
@@ -145,7 +149,7 @@
 
     // Food news API call displayed in sidebar.
     $(document).ready(function()  {
-        var newsapi = '7fabcb6f2bdc479e826d08269c5e8647';
+        var newsapi = key.apikeys.news;
         var news_resource_url = 'https://newsapi.org/v2/everything?q=food&apiKey=' + newsapi;
         $.ajax({
             url: news_resource_url,
@@ -176,8 +180,8 @@
 
 //============================ Search Button Api Results==================================================================//
 
-var id = "cb29f88c";
-var key = "d602f1e3d5650efe09b61a38753a9132";
+var id = key.apikeys.id;
+var key = key.apikeys.secret;
 
 $("#submit").on("click", function (event) {
     event.preventDefault();
