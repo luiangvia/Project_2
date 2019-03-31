@@ -1,7 +1,9 @@
 //API Keys connection
-require("dotenv").config({ path: "../../.env" });
-var key = require("../../keys.js");
-
+var keys = {
+    id: "cb29f88c",
+    secret: "d602f1e3d5650efe09b61a38753a9132",
+    news: "7fabcb6f2bdc479e826d08269c5e8647"
+};
 (function ($) {
     'use strict';
 
@@ -148,8 +150,8 @@ var key = require("../../keys.js");
     }, 3000);
 
     // Food news API call displayed in sidebar.
-    $(document).ready(function()  {
-        var newsapi = key.apikeys.news;
+    $(document).ready(function () {
+        var newsapi = keys.news;
         var news_resource_url = 'https://newsapi.org/v2/everything?q=food&apiKey=' + newsapi;
         $.ajax({
             url: news_resource_url,
@@ -180,8 +182,8 @@ var key = require("../../keys.js");
 
 //============================ Search Button Api Results==================================================================//
 
-var id = key.apikeys.id;
-var key = key.apikeys.secret;
+var id = keys.id;
+var key = keys.secret;
 
 $("#submit").on("click", function (event) {
     event.preventDefault();
@@ -189,11 +191,12 @@ $("#submit").on("click", function (event) {
     $("#favorite-recipes-view").empty();
     $("#recipes-view").empty();
 
-   
+
     var recipe = $("#recipes").val().trim();
     console.log(recipe);
-    var queryURL = "https://api.edamam.com/search?q=" + recipe + "&app_id=" + id + "&app_key=" + key ;
-  
+    var queryURL = "https://api.edamam.com/search?q=" + recipe + "&app_id=" + id + "&app_key=" + key;
+    console.log(queryURL)
+
     $.ajax({
         url: queryURL,
         method: "GET"
