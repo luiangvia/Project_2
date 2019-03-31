@@ -676,6 +676,7 @@ li {
 }
 
 .post-meta {
+    margin-bottom: 20px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     -ms-grid-row-align: center;
@@ -931,6 +932,7 @@ li {
 .recipe {
     display: inline-block;
     vertical-align: top;
+    padding-bottom: 40px;
 }
 
 .recipe h2,
@@ -996,11 +998,11 @@ li {
 }
 
 #add-recipe-div {
-    margin-top: 10px;
+    margin-top: 20px;
 }
 
-#recipes-view {
-    margin-bottom: 40px;
+.todo-item h4 {
+    margin-bottom: 0;
 }
 
 /* --------------------
