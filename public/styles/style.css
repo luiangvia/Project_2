@@ -958,14 +958,14 @@ li {
 }
 
 .recipe .read-more {
-    font-size: 12px;
+    font-size: 16px;
     color: #b5aeba;
     display: inline-block;
     border: 1px solid #ebebeb;
     border-radius: 20px;
-    height: 30px;
-    min-width: 150px;
-    line-height: 30px;
+    height: 34px;
+    min-width: 180px;
+    line-height: 34px;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -984,7 +984,10 @@ li {
 }
 
 .recipe .btn {
-    margin-left: 20px;
+    margin-left: 14px;
+    border-radius: 20px;
+    height: 34px;
+    margin-top: 0;
 }
 
 #recipes-title h2 {
