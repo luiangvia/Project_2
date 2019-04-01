@@ -1,3 +1,10 @@
+//API Keys connection
+var keys = {
+    id: "cb29f88c",
+    secret: "d602f1e3d5650efe09b61a38753a9132",
+    news: "7fabcb6f2bdc479e826d08269c5e8647"
+  };
+
 (function ($) {
     'use strict';
 
@@ -145,7 +152,7 @@
 
     // Food news API call displayed in sidebar.
     $(document).ready(function()  {
-        var newsapi = '7fabcb6f2bdc479e826d08269c5e8647';
+        var newsapi = keys.news;
         var news_resource_url = 'https://newsapi.org/v2/everything?q=food&apiKey=' + newsapi;
         $.ajax({
             url: news_resource_url,
@@ -176,8 +183,8 @@
 
 //============================ Search Button Api Results==================================================================//
 
-var id = "cb29f88c";
-var key = "d602f1e3d5650efe09b61a38753a9132";
+var id = keys.id;
+var key = keys.secret;
 
 $("#submit").on("click", function (event) {
     event.preventDefault();
@@ -219,7 +226,8 @@ $("#submit").on("click", function (event) {
             link.attr("target", "_blank");
             recipeDiv.append(link);
 
-            var addRecipe = $("<button type='addRecipe' class='btn btn-primary'>Add Recipe</button>");
+            var addRecipe = $("<button type='addRecipe' class='btn btn-primary addRecipe'>Add Recipe</button>");
+            addRecipe.attr("value", response.hits[i].recipe.label);
             recipeDiv.append(addRecipe);
 
             $("#recipes-view").prepend(recipeDiv);

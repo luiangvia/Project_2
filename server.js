@@ -3,6 +3,10 @@ var express = require("express");
 
 var db = require("./models");
 
+
+const chalk = require('chalk');
+console.log(chalk.blue('This is an exmaple of using a new library package!'));
+
 var app = express();
 var PORT = process.env.PORT || 3000;
 
