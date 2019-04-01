@@ -13,13 +13,10 @@ demo - https://yummy-project-2.herokuapp.com/
 * **Sequelize**
 * **Bootstrap**
 * **Edamam API**
-* **News API**
 * **MVC Model**
 * **JawsDB**
 * **Heroku**
 * **HTTP Routes**
-* **Chalk**
-
 
 
 ##### The following npm modules were used
@@ -27,7 +24,6 @@ demo - https://yummy-project-2.herokuapp.com/
 * **dotenv**
 * **mysql2**
 * **sequelize**
-* **chalk**
 
 Developers:  Elena Mudrakova, Bojan Mitrovic, Luis Via, Chris Wolberg
 
