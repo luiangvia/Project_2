@@ -676,7 +676,6 @@ li {
 }
 
 .post-meta {
-    margin-bottom: 20px;
     -webkit-box-align: center;
     -ms-flex-align: center;
     -ms-grid-row-align: center;
@@ -932,7 +931,6 @@ li {
 .recipe {
     display: inline-block;
     vertical-align: top;
-    padding-bottom: 40px;
 }
 
 .recipe h2,
@@ -958,14 +956,14 @@ li {
 }
 
 .recipe .read-more {
-    font-size: 16px;
+    font-size: 12px;
     color: #b5aeba;
     display: inline-block;
     border: 1px solid #ebebeb;
     border-radius: 20px;
-    height: 34px;
-    min-width: 180px;
-    line-height: 34px;
+    height: 30px;
+    min-width: 150px;
+    line-height: 30px;
     text-align: center;
     margin-bottom: 20px;
 }
@@ -984,10 +982,7 @@ li {
 }
 
 .recipe .btn {
-    margin-left: 14px;
-    border-radius: 20px;
-    height: 34px;
-    margin-top: 0;
+    margin-left: 20px;
 }
 
 #recipes-title h2 {
@@ -1001,11 +996,11 @@ li {
 }
 
 #add-recipe-div {
-    margin-top: 20px;
+    margin-top: 10px;
 }
 
-.todo-item h4 {
-    margin-bottom: 0;
+#recipes-view {
+    margin-bottom: 40px;
 }
 
 /* --------------------
